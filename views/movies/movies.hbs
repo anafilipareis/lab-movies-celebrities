@@ -1,0 +1,12 @@
+
+<h2>List of Movies</h2>
+
+<!-- Add a link to the form for creating a new movie -->
+<a href="/movies/create">Create a New Movie</a>
+
+<!-- Display the list of movies  -->
+<ul>
+  {{#each allMovies}}
+    <li href="/movies/{{this._id}}" >{{this.title}}</li>
+  {{/each}}
+</ul>
